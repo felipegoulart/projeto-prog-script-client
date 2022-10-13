@@ -5,8 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto CRUDizinho maroto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-  <h1>Iniciando o Projeto</h1>
+  <header class="page-header">
+    <h1>Projeto de CRUD e Deploy</h1>
+    <p>Um trabalho de Luis Felipe Goulart para a diciplina de Programação Script 2022 - Fatec Franca 2022</p>
+  </header>
+
+  <section class="section-table">
+    <div>
+      <header>
+        <h2>Lista de funcionários</h2>
+      </header>
+      <table>
+        <thead>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Função</th>
+          <th>Salário</th>
+          <th>Ações</th>
+        </thead>
+
+        <tbody data-js="table-body">
+          <!-- Conteúdo dinâmico -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section-form">
+    <div>
+      <h2>Formulário de funcionários</h2>
+      <form id="employees-form">
+        <input type="hidden" name="id"> 
+
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        
+        <div>
+          <label for="occupation">Função</label>
+          <input type="text" name="occupation" id="occupation" required>
+        </div>
+
+        <div>
+          <label for="salary">Salário</label>
+          <input type="number" name="salary" id="salary" required>
+        </div>
+
+        <button><span class="material-symbols-outlined">add</span> Salvar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
 </body>
 </html>
